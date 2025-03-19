@@ -59,7 +59,7 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    int suma = 0;
    int *elemento = (int*)first(L);   
-   while(*elemento != NULL){
+   while(first(L) != NULL){
       suma += *elemento;
       *elemento = (int *)next(L);   
    }
@@ -76,13 +76,13 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-   int actual = first(L);
+   int* actual = (int *)first(L);
    while (actual != NULL){
       if (*(int*)actual == elem){
          popCurrent(L);
       }
       else{
-         actual = next(L);
+         *actual = next(L);
       }
    }
 }
