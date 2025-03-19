@@ -64,6 +64,7 @@ int sumaLista(List *L) {
       elemento = (int *)next(L);   
    }
    return suma;*/
+   return 0;
 }
 
 /*
