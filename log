@@ -109,3 +109,17 @@ exercises.c:104:25: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 95e3c18
+Wed, Mar 19, 2025 12:37:13 AM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:99:19: error: comparison between pointer and integer [-Werror]
+    while (top(P1) != -1){
+                   ^~
+exercises.c:104:25: error: comparison between pointer and integer [-Werror]
+    while (top(auxiliar) != -1){
+                         ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5dd0d6b
