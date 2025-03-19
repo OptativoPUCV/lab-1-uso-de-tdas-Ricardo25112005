@@ -75,9 +75,9 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem){
+/*void eliminaElementos(List*L, int elem){
    int* actual = (int *)first(L);
-   while (actual != NULL){
+   while (first(L) != NULL){
       if (*(int*)actual == elem){
          popCurrent(L);
       }
@@ -85,7 +85,7 @@ void eliminaElementos(List*L, int elem){
          actual = next(L);
       }
    }
-}
+}*/
 
 /*
 Ejercicio 4.
@@ -94,20 +94,20 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+/*void copia_pila(Stack* P1, Stack* P2) {
    Stack* auxiliar =  create_stack();
-   while (top(P1) != -1){
+   while (top(P1) != NULL){
       int *elemento = (int*)top(P1);
       push(auxiliar, elemento);
       pop(P1);
    }
-   while (top(auxiliar) != -1){
+   while (top(auxiliar) != NULL){
       int *elemento = (int*)top(auxiliar);
       push(P1, elemento);
       push(P2, elemento);
       pop(auxiliar);
    } 
-}
+}*/
 
 /*
 Ejercicio 5.

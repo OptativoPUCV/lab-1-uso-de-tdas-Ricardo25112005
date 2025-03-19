@@ -123,3 +123,17 @@ exercises.c:104:25: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5dd0d6b
+Wed, Mar 19, 2025 12:42:22 AM: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+test.c: In function 'test_elimina_elemento':
+test.c:132:5: error: implicit declaration of function 'eliminaElementos' [-Werror=implicit-function-declaration]
+     eliminaElementos(L, elem);
+     ^~~~~~~~~~~~~~~~
+test.c: In function 'test_copia_pila':
+test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=implicit-function-declaration]
+     copia_pila(P1, P2);
+     ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+be8d1c6
