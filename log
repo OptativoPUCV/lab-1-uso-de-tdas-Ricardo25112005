@@ -172,3 +172,14 @@ Wed, Mar 19, 2025 12:50:27 AM:
  tests:  1|4
 total_score: 10/70
 df83040
+Wed, Mar 19, 2025  1:01:30 AM: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:62:20: error: comparison between pointer and integer [-Werror]
+    while(*elemento != NULL){
+                    ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+802575c
