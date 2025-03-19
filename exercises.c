@@ -77,16 +77,14 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem){
    int* actual = first(L);
-   while (first(L) != NULL){
+   while (actual != NULL){
       if (*actual == elem){
          popCurrent(L);
-      }
-      else{
          actual = next(L);
       }
+      else {actual = next(L);}
    }
 }
-
 /*
 Ejercicio 4.
 La función copia los punteros de la pila P1 en la pila P2.
