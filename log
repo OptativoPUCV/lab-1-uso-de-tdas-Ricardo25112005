@@ -45,3 +45,14 @@ Tue, Mar 18, 2025 11:49:50 PM:
  tests:  0|5
 total_score: 0/70
 b455047
+Wed, Mar 19, 2025 12:11:21 AM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:62:20: error: comparison between pointer and integer [-Werror]
+    while(*elemento != NULL){
+                    ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+36c4949
