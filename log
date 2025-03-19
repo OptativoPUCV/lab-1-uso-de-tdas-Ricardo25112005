@@ -137,3 +137,14 @@ test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 be8d1c6
+Wed, Mar 19, 2025 12:44:07 AM: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:48:16: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+       elemento = k;
+                ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ec6ebcf

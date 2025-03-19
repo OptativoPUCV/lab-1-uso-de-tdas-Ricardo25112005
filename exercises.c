@@ -45,7 +45,7 @@ List* crea_lista() {
    List* L = create_list();
    for (int k = 1; k <= 10; k++){
       int *elemento = (int*)malloc(sizeof(int));
-      *elemento = k;
+      elemento = k;
       pushBack(L, elemento);
    }
    return L;
@@ -75,8 +75,8 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-/*void eliminaElementos(List*L, int elem){
-   int* actual = (int *)first(L);
+void eliminaElementos(List*L, int elem){
+   /*int* actual = (int *)first(L);
    while (first(L) != NULL){
       if (*(int*)actual == elem){
          popCurrent(L);
@@ -84,8 +84,8 @@ posiciona en el elemento anterior.
       else{
          actual = next(L);
       }
-   }
-}*/
+   }*/
+}
 
 /*
 Ejercicio 4.
@@ -94,8 +94,8 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-/*void copia_pila(Stack* P1, Stack* P2) {
-   Stack* auxiliar =  create_stack();
+void copia_pila(Stack* P1, Stack* P2) {
+   /*Stack* auxiliar =  create_stack();
    while (top(P1) != NULL){
       int *elemento = (int*)top(P1);
       push(auxiliar, elemento);
@@ -106,8 +106,8 @@ Puedes usar una pila auxiliar.
       push(P1, elemento);
       push(P2, elemento);
       pop(auxiliar);
-   } 
-}*/
+   }*/
+}
 
 /*
 Ejercicio 5.
