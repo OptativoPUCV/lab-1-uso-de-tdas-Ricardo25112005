@@ -61,7 +61,7 @@ int sumaLista(List *L) {
    int *elemento = (int*)first(L);   
    while(*elemento != NULL){
       suma += *elemento;
-      elemento = (int *)next(L);   
+      *elemento = (int *)next(L);   
    }
    return suma;
 }
@@ -76,7 +76,15 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
+   int actual = first(L);
+   while (actual != NULL){
+      if (*(int*)actual == elem){
+         popCurrent(L);
+      }
+      else{
+         actual = next(L);
+      }
+   }
 }
 
 /*
@@ -87,6 +95,18 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+   Stack* auxiliar =  create_stack();
+   while (top(P1) != -1){
+      int *elemento = (int*)top(P1);
+      push(auxiliar, elemento);
+      pop(P1);
+   }
+   while (top(auxiliar) != -1){
+      int *elemento = (int*)top(auxiliar);
+      push(P1, elemento);
+      push(P2, elemento);
+      pop(auxiliar);
+   } 
 }
 
 /*
