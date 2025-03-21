@@ -115,7 +115,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   /*Stack *pila = create_stack(); 
+   Stack *pila = create_stack();
 
     for (int i = 0; cadena[i] != '\0'; i++) {
         char c = cadena[i];
@@ -125,19 +125,18 @@ int parentesisBalanceados(char *cadena) {
             push(pila, char_ptr);
         } 
         else if (c == ')' || c == '}' || c == ']') {
-            char tope = (char)(long)top(pila);
+            if (top(pila) == NULL) return 0;
+
+            char tope = *(char *)top(pila);
             if ((c == ')' && tope != '(') ||
                 (c == '}' && tope != '{') ||
                 (c == ']' && tope != '[')) {
-                while(top(pila) != NULL) {
-                    free(pop(pila));
-                }
                 return 0; 
             }
-            pop(pila);
+            free(pop(pila));
         }
-    }*/
-   Stack* auxiliar = create_stack();
+    }
+   /*Stack* auxiliar = create_stack();
    Stack* auxiliar2 = create_stack();
    Stack* auxiliar3 = create_stack();
    for(int i = 0; cadena[i] != '\0'; i++){
@@ -155,7 +154,7 @@ int parentesisBalanceados(char *cadena) {
       if (top(auxiliar2) != top(auxiliar3)) return 0;
       pop(auxiliar2);
       pop(auxiliar3);
-   }
-   return 0;
+   }*/
+   return 1;
 }
 
