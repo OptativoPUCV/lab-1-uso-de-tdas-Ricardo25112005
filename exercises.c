@@ -119,7 +119,8 @@ int parentesisBalanceados(char *cadena) {
    Stack* auxiliar2 = create_stack();
    Stack* auxiliar3 = create_stack();
    for(int i = 0; cadena[i] != '\0'; i++){
-      push(auxiliar, cadena[i]);
+      void *caracter = cadena[i];
+      push(auxiliar, caracter);
    }
    while(top(auxiliar) != NULL){
       push(auxiliar2, top(auxiliar));

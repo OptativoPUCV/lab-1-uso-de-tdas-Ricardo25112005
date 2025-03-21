@@ -305,3 +305,14 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'char'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0205c1f
+Thu, Mar 20, 2025  9:30:37 PM: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:122:24: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+       void *caracter = cadena[i];
+                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0b31db3
