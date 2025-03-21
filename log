@@ -264,3 +264,28 @@ stack.h:17:7: note: expected 'Stack * {aka struct List *}' but argument is of ty
 cc1.exe: all warnings being treated as errors
 Compilation failed
 f46faac
+Thu, Mar 20, 2025  9:28:36 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:122:22: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(auxiliar, cadena[i]);
+                      ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'char'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:123:11: error: passing argument 1 of 'pop' from incompatible pointer type [-Werror=incompatible-pointer-types]
+       pop(cadena);
+           ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:17:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'char *'
+ void *pop(Stack *stack) { return popFront(stack); }
+       ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6282c3b
