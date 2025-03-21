@@ -140,7 +140,7 @@ int parentesisBalanceados(char *cadena) {
    Stack* auxiliar = create_stack();
    Stack* auxiliar2 = create_stack();
    Stack* auxiliar3 = create_stack();
-   for(int i = 0; cadena[i] != '/0'; i++){
+   for(int i = 0; cadena[i] != '\0'; i++){
       char caracter = cadena[i];
       char *char_ptr = (char *)malloc(sizeof(char));
       *char_ptr = caracter;

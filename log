@@ -368,3 +368,9 @@ exercises.c:143:32: error: multi-character character constant [-Werror=multichar
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ae1f191
+Thu, Mar 20, 2025 10:37:43 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+77920a3
