@@ -289,3 +289,19 @@ stack.h:17:7: note: expected 'Stack * {aka struct List *}' but argument is of ty
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6282c3b
+Thu, Mar 20, 2025  9:28:53 PM: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:122:22: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(auxiliar, cadena[i]);
+                      ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'char'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0205c1f
