@@ -357,3 +357,14 @@ exercises.c:143:29: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 dd18d5e
+Thu, Mar 20, 2025 10:36:39 PM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:143:32: error: multi-character character constant [-Werror=multichar]
+    for(int i = 0; cadena[i] != '/0'; i++){
+                                ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ae1f191

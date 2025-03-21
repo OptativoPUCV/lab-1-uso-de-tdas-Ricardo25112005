@@ -140,7 +140,7 @@ int parentesisBalanceados(char *cadena) {
    Stack* auxiliar = create_stack();
    Stack* auxiliar2 = create_stack();
    Stack* auxiliar3 = create_stack();
-   for(int i = 0; cadena[i] != NULL; i++){
+   for(int i = 0; cadena[i] != '/0'; i++){
       char caracter = cadena[i];
       char *char_ptr = (char *)malloc(sizeof(char));
       *char_ptr = caracter;
@@ -151,9 +151,9 @@ int parentesisBalanceados(char *cadena) {
       push(auxiliar2, top(auxiliar));
       pop(auxiliar);   
    }
-   while(top(auxiliar) != NULL){
-      if (top(auxiliar) != top(auxiliar3)) return 0;
-      pop(auxiliar);
+   while(top(auxiliar2) != NULL){
+      if (top(auxiliar2) != top(auxiliar3)) return 0;
+      pop(auxiliar2);
       pop(auxiliar3);
    }
    return 1;
