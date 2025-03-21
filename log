@@ -346,3 +346,14 @@ Thu, Mar 20, 2025 10:09:28 PM:
  tests:  5|1
 total_score: 50/70
 90e5e34
+Thu, Mar 20, 2025 10:10:14 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:143:29: error: comparison between pointer and integer [-Werror]
+    for(int i = 0; cadena[i] != NULL; i++){
+                             ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dd18d5e
