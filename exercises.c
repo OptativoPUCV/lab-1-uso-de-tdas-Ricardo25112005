@@ -138,25 +138,5 @@ int parentesisBalanceados(char *cadena) {
    }
    if (top(pila) != NULL) return 0;
    return 1;
-   /*Stack* auxiliar = create_stack();
-   Stack* auxiliar2 = create_stack();
-   Stack* auxiliar3 = create_stack();
-   for(int i = 0; cadena[i] != '\0'; i++){
-      char caracter = cadena[i];
-      char *char_ptr = (char *)malloc(sizeof(char));
-      *char_ptr = caracter;
-      push(auxiliar,char_ptr);
-      push(auxiliar3, char_ptr);
-   }
-   while(top(auxiliar) != NULL){
-      push(auxiliar2, top(auxiliar));
-      pop(auxiliar);   
-   }
-   while(top(auxiliar2) != NULL){
-      if (top(auxiliar2) != top(auxiliar3)) return 0;
-      pop(auxiliar2);
-      pop(auxiliar3);
-   }*/
-   return 1;
 }
 
