@@ -133,9 +133,10 @@ int parentesisBalanceados(char *cadena) {
                 (c == ']' && tope != '[')) {
                 return 0; 
             }
-            free(pop(pila));
+            pop(pila);
          }
    }
+   if (top(pila) != NULL) return 0;
    return 1;
    /*Stack* auxiliar = create_stack();
    Stack* auxiliar2 = create_stack();
