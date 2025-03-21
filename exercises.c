@@ -123,7 +123,7 @@ int parentesisBalanceados(char *cadena) {
             char *char_ptr = (char *)malloc(sizeof(char));
             *char_ptr = c;
             push(pila, char_ptr);
-        } 
+         } 
         else if (c == ')' || c == '}' || c == ']') {
             if (top(pila) == NULL) return 0;
 
@@ -134,8 +134,9 @@ int parentesisBalanceados(char *cadena) {
                 return 0; 
             }
             free(pop(pila));
-        }
-    }
+         }
+   }
+   return 1;
    /*Stack* auxiliar = create_stack();
    Stack* auxiliar2 = create_stack();
    Stack* auxiliar3 = create_stack();
