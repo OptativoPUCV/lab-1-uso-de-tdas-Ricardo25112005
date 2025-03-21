@@ -230,3 +230,37 @@ Thu, Mar 20, 2025  9:10:23 PM:
  tests:  4|1
 total_score: 50/70
 4bed46d
+Thu, Mar 20, 2025  9:24:27 PM: 
+ exercises.c | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:121:14: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    while(top(cadena) != NULL){
+              ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'char *'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:122:26: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+       push(auxiliar, top(cadena));
+                          ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'char *'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:123:11: error: passing argument 1 of 'pop' from incompatible pointer type [-Werror=incompatible-pointer-types]
+       pop(cadena);
+           ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:17:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'char *'
+ void *pop(Stack *stack) { return popFront(stack); }
+       ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f46faac
