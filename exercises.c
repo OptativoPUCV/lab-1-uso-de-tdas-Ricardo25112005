@@ -156,6 +156,6 @@ int parentesisBalanceados(char *cadena) {
       pop(auxiliar2);
       pop(auxiliar3);
    }
-   return 1;
+   return 0;
 }
 
